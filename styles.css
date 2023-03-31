@@ -1,0 +1,191 @@
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: Outfit;
+  max-height: 100vh;
+  font-family: "Hanken Grotesk";
+  color: white;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin: 50px auto 0;
+  color: black;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 320px);
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  margin: 10% 0 0;
+}
+
+/* CODE RELATED TO RESULTS SECTION */
+
+.container-results {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+  border-style: none;
+  min-width: 320px;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 180px;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  margin: auto;
+}
+
+.dot h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.dot p {
+  position: absolute;
+  margin: 6.5rem 0 0;
+  color: hsla(241, 100%, 89%, 0.6);
+  padding: 0;
+}
+
+.r-bold {
+  font-style: bold;
+  font-size: 1.4rem;
+  color: hsla(241, 100%, 89%, 1);
+  padding: 0.7rem 0 0.3rem;
+}
+
+.Results {
+  padding: 0.1em 1.5em 1.5em;
+}
+
+.result-score h1 {
+  padding: 10px 0 0;
+  font-size: 2em;
+}
+
+.result-score p {
+  padding: 0 15px 0;
+  font-size: 1.1rem;
+  color: hsla(241, 100%, 89%, 1);
+}
+
+/* CODE RELATED TO SUMMARY SECTION */
+
+.container-summary {
+  width: 320px;
+  border-radius: 25px;
+  border-style: none;
+  min-width: 320px;
+  background-image: white;
+  text-align: center;
+  margin-right: auto;
+}
+
+.container-summary h1 {
+  color: hsl(224, 30%, 27%);
+  height: 29px;
+  width: auto;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.icon {
+  background-color: transparent;
+  background-size: 20px 20px;
+  height: 20px;
+  width: 20px;
+  padding-top: 1.32em;
+}
+
+.summary-button {
+  border-radius: 25px;
+  border-style: none;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  font-family: "Hanken Grotesk";
+  font-size: 1.1rem;
+  min-width: 260px;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+.summary-category {
+  margin: auto;
+  font-weight: bold;
+}
+
+.summary-grid {
+  display: inline-grid;
+  grid-template-columns: 40px 110px 110px;
+  min-height: 280px;
+  padding-top: 1rem;
+}
+
+.summary-grid span {
+  display: inline-flex;
+  padding-top: 1.32em;
+}
+
+/* GRID LAYOUT SUMMARY*/
+
+/* STYLING SUMMARY_ITEMS*/
+.s-100-score {
+  color: hsl(180, 8%, 69%);
+  font-weight: bold;
+}
+
+.s-bold-span {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+}
+
+.s-reaction {
+  color: hsl(0, 100%, 67%);
+  font-weight: bold;
+  margin-right: 100%;
+}
+
+.s-memory {
+  color: hsl(39, 100%, 56%);
+  font-weight: bold;
+  margin-right: 100%;
+}
+
+.s-verbal {
+  color: hsl(166, 100%, 37%);
+  font-weight: bold;
+  margin-right: 100%;
+}
+
+.s-visual {
+  color: hsl(234, 85%, 45%);
+  font-weight: bold;
+  margin-right: 100%;
+}
+
+@media (max-width: 850px) {
+  .main-container {
+    grid-template-columns: repeat(1, 400px);
+    margin: 0 0 100px;
+  }
+}
