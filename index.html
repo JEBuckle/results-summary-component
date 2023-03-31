@@ -1,123 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="./assets/images/favicon-32x32.png" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap"
-      rel="stylesheet"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./styles.css" />
     <title>Frontend Mentor | Results summary component by Joshua Buckle</title>
   </head>
   <body>
     <main>
-      <div class="main-container">
+      <div class="container">
         <div class="container-results">
-          <div class="Results">
-            <div>
-              <p class="r-bold">Your Result</p>
-              <div class="dot">
-                <h1>76</h1>
-                <p>of 100</p>
-              </div>
-              <div class="result-score">
-                <h1>Great</h1>
-                <p>
-                  You scored higher than 65% of the people who have taken these
-                  tests.
-                </p>
-              </div>
-            </div>
+          <div class="container-header light-lavender"><p>Your Result</p></div>
+          <div class="dot">
+            <h1>76</h1>
+            <p>of 100</p>
+          </div>
+          <div>
+            <h2>Great</h2>
+            <p class="container-results-content">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
           </div>
         </div>
-        <div class="container-summary">
-          <h1>Summary</h1>
-          <div class="summary-grid">
-            <div>
-              <img
-                class="icon"
-                src="./assets/images/icon-reaction.svg"
-                alt="icon of lightning"
-              />
+        <div>
+          <div class="container-summary">
+            <h1 class="gray-blue">Summary</h1>
+            <div class="container-summary-score">
+              <div class="c-s-container">
+                <img
+                  class="icon"
+                  src="./assets/images/icon-reaction.svg"
+                  alt="Icon of Flash"
+                />
+
+                <span class="c-s-reaction"> Reaction </span>
+                <div class="c-s-score">
+                  <span class="gray-blue">80</span>
+                  <span class="light-lavender">/ 100</span>
+                </div>
+              </div>
+
+              <div class="c-s-container padding">
+                <img
+                  class="icon"
+                  src="./assets/images/icon-memory.svg"
+                  alt="Icon of Brain"
+                />
+                <span class="c-s-memory">Memory</span>
+                <div class="c-s-score">
+                  <span class="gray-blue">92</span>
+                  <span class="light-lavender">/ 100</span>
+                </div>
+              </div>
+
+              <div class="c-s-container padding">
+                <img
+                  class="icon"
+                  src="./assets/images/icon-verbal.svg"
+                  alt="Icon of speech bubble"
+                />
+                <span class="c-s-verbal">Verbal</span>
+                <div class="c-s-score">
+                  <span class="gray-blue">61</span>
+                  <span class="light-lavender">/ 100</span>
+                </div>
+              </div>
+              <div class="c-s-container padding">
+                <img
+                  class="icon"
+                  src="./assets/images/icon-visual.svg"
+                  alt="Icon of eye"
+                />
+                <span class="c-s-visual">Visual</span>
+                <div class="c-s-score">
+                  <span class="gray-blue">72</span>
+                  <span class="light-lavender">/ 100</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <span class="s-reaction">Reaction</span>
-            </div>
-            <div>
-              <span class="s-bold-span">80 </span>
-              <span class="s-100-score">/ 100</span>
-            </div>
-            <div>
-              <img
-                class="icon"
-                src="./assets/images/icon-memory.svg"
-                alt="icon of brain"
-              />
-            </div>
-            <div>
-              <span class="s-memory">Memory</span>
-            </div>
-            <div>
-              <span class="s-bold-span">92 </span>
-              <span class="s-100-score">/ 100</span>
-            </div>
-            <div>
-              <img
-                class="icon"
-                src="./assets/images/icon-verbal.svg"
-                alt="icon of speech bubble"
-              />
-            </div>
-            <div>
-              <span class="s-verbal">Verbal</span>
-            </div>
-            <div>
-              <span class="s-bold-span">61 </span>
-              <span class="s-100-score">/ 100</span>
-            </div>
-            <div>
-              <img
-                class="icon"
-                src="./assets/images/icon-visual.svg"
-                alt="Icon of eye"
-              />
-            </div>
-            <div>
-              <span class="s-visual">Visual</span>
-            </div>
-            <div>
-              <span class="s-bold-span">72 </span>
-              <span class="s-100-score">/ 100</span>
-            </div>
+            <button class="summary-button">Continue</button>
           </div>
-          <a
-            ><button
-              class="summary-button"
-              onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'"
-            >
-              Continue
-            </button>
-          </a>
         </div>
       </div>
     </main>
-
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-        Frontend Mentor
-      </a>
-      . Coded by <a href="https://github.com/JEBuckle">Joshua Buckle</a>.
-    </footer>
   </body>
 </html>

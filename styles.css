@@ -1,44 +1,87 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+/* COLOR CLASSES*/
+
+.gray-blue {
+  color: hsl(224, 30%, 27%);
+}
+
+.light-lavender {
+  color: hsla(241, 100%, 89%, 0.8);
+}
+
 body {
-  background-color: hsl(0, 0%, 100%);
-  font-family: Outfit;
-  max-height: 100vh;
-  font-family: "Hanken Grotesk";
-  color: white;
-  margin: 0;
+  height: 100%;
+  font-family: "HankenGrotesk";
+  font-size: 18px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  width: 100%;
-  display: inline-block;
-  margin: 50px auto 0;
-  color: black;
 }
-
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-.main-container {
-  display: grid;
-  grid-template-columns: repeat(2, 320px);
-  text-align: center;
-  justify-content: center;
-  background-color: white;
-  margin: 10% 0 0;
+.icon {
+  background-color: transparent;
+  background-size: 20px 20px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  padding-left: 1.1em;
+  padding-top: 1em;
 }
 
-/* CODE RELATED TO RESULTS SECTION */
+/* */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 340px);
+  position: absolute;
+  top: 50%;
+  height: 440px;
+  margin-top: -220px; /* Half of the height */
+  left: 50%;
+  width: 680px;
+  margin-left: -340px; /* Half of the width */
+}
+
+/* CSS FOR RESULTS */
 
 .container-results {
-  display: flex;
-  justify-content: center;
+  color: hsl(221, 100%, 96%);
+  display: flexbox;
   text-align: center;
-  border-radius: 25px;
+  min-width: 340px;
+  border-radius: 30px;
   border-style: none;
-  min-width: 320px;
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.container-results h2 {
+  font-size: 1.6em;
+  padding-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.container-results-content {
+  padding: 0 2.1em 1.5em;
+}
+
+.container-header {
+  padding: 1em 0 0.5em;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .dot {
@@ -66,126 +109,86 @@ body {
   color: hsla(241, 100%, 89%, 0.6);
   padding: 0;
 }
-
-.r-bold {
-  font-style: bold;
-  font-size: 1.4rem;
-  color: hsla(241, 100%, 89%, 1);
-  padding: 0.7rem 0 0.3rem;
-}
-
-.Results {
-  padding: 0.1em 1.5em 1.5em;
-}
-
-.result-score h1 {
-  padding: 10px 0 0;
-  font-size: 2em;
-}
-
-.result-score p {
-  padding: 0 15px 0;
-  font-size: 1.1rem;
-  color: hsla(241, 100%, 89%, 1);
-}
-
-/* CODE RELATED TO SUMMARY SECTION */
+/* CSS FOR SUMMARY */
 
 .container-summary {
-  width: 320px;
-  border-radius: 25px;
-  border-style: none;
-  min-width: 320px;
-  background-image: white;
-  text-align: center;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-summary h1 {
-  color: hsl(224, 30%, 27%);
-  height: 29px;
-  width: auto;
-  text-align: left;
-  padding-left: 2rem;
+  font-size: 22px;
+  margin-top: 43px;
+  padding-left: 0.8em;
 }
 
-.icon {
-  background-color: transparent;
-  background-size: 20px 20px;
-  height: 20px;
-  width: 20px;
-  padding-top: 1.32em;
+.c-s-container {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* This class exists, because padding only needs to be starting from the memory-component*/
+.padding {
+  padding-top: 25px;
+}
+
+.c-s-score {
+  margin-left: auto;
+  padding-right: 1.5em;
+  padding-top: 1em;
+  margin-bottom: 15px;
+}
+
+.c-s-reaction {
+  color: hsl(0, 100%, 67%);
+  padding-left: 0.7em;
+  padding-top: 1em;
+}
+
+.c-s-memory {
+  color: hsl(39, 100%, 56%);
+  padding-left: 0.7em;
+  padding-top: 1em;
+}
+
+.c-s-verbal {
+  color: hsl(166, 100%, 37%);
+  padding-left: 0.7em;
+  padding-top: 1em;
+}
+
+.c-s-visual {
+  color: hsl(234, 85%, 45%);
+  padding-left: 0.7em;
+  padding-top: 1em;
 }
 
 .summary-button {
-  border-radius: 25px;
+  border-radius: 30px;
   border-style: none;
-  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-color: hsl(224, 30%, 27%);
   color: white;
-  font-family: "Hanken Grotesk";
   font-size: 1.1rem;
-  min-width: 260px;
-  padding: 0.8rem;
-  margin-top: 1rem;
+  min-width: 240px;
+  padding: 0.8em;
+  margin: 35px 35px 20px;
 }
 
-.summary-category {
-  margin: auto;
-  font-weight: bold;
-}
-
-.summary-grid {
-  display: inline-grid;
-  grid-template-columns: 40px 110px 110px;
-  min-height: 280px;
-  padding-top: 1rem;
-}
-
-.summary-grid span {
-  display: inline-flex;
-  padding-top: 1.32em;
-}
-
-/* GRID LAYOUT SUMMARY*/
-
-/* STYLING SUMMARY_ITEMS*/
-.s-100-score {
-  color: hsl(180, 8%, 69%);
-  font-weight: bold;
-}
-
-.s-bold-span {
-  color: hsl(224, 30%, 27%);
-  font-weight: bold;
-}
-
-.s-reaction {
-  color: hsl(0, 100%, 67%);
-  font-weight: bold;
-  margin-right: 100%;
-}
-
-.s-memory {
-  color: hsl(39, 100%, 56%);
-  font-weight: bold;
-  margin-right: 100%;
-}
-
-.s-verbal {
-  color: hsl(166, 100%, 37%);
-  font-weight: bold;
-  margin-right: 100%;
-}
-
-.s-visual {
-  color: hsl(234, 85%, 45%);
-  font-weight: bold;
-  margin-right: 100%;
-}
-
-@media (max-width: 850px) {
-  .main-container {
-    grid-template-columns: repeat(1, 400px);
-    margin: 0 0 100px;
+/* MOBILE  */
+@media (max-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    margin: 0;
+    left: 0;
+    top: 0;
+    justify-content: center;
+  }
+  .container-summary {
+    min-width: 300px;
+  }
+  .container-results {
+    min-width: 300px;
   }
 }

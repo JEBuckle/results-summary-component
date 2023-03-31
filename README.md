@@ -11,3 +11,11 @@ After managing to style the component cards properly, I got stuck at optimizing 
 - creating gradients using the hsla() function
 - how to use the grid-column/row systems
 - implementing flexbox within grid elements to make styling easier
+
+## New Commit:
+
+## This is my second version of the challenge.
+
+## In this version I completeley changed the layout & styling - headers are now aligned properly and the code is less messy.
+
+## Mobile optimization is not fully completed just yet, this version is rather a complete refactor of the main code & css -> mobile optimazion coming
