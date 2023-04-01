@@ -176,19 +176,64 @@ body {
 }
 
 /* MOBILE  */
-@media (max-width: 700px) {
+@media (max-width: 675px) {
   .container {
-    display: grid;
-    grid-template-columns: repeat(1, 300px);
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 13em 0 0;
     left: 0;
     top: 0;
     justify-content: center;
+    top: 0;
   }
-  .container-summary {
-    min-width: 300px;
+  /* CONTAINER RESULTS CSS */
+  .container-header {
+    padding-top: 2em;
   }
   .container-results {
-    min-width: 300px;
+    border-radius: 8%;
+    margin-top: 20em;
+  }
+  .container-results p {
+    font-size: 1.5em;
+  }
+  .container-results h1 {
+    font-size: 5.5em;
+  }
+  .container-results h2 {
+    font-size: 2.3em;
+  }
+  .container-results-content {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .dot {
+    height: 250px;
+    width: 250px;
+  }
+  .dot p {
+    padding-top: 1em;
+  }
+
+  /* CONTAINER SUMMARY CSS*/
+  .container-summary {
+    font-size: 1.7em;
+  }
+  .container-summary h1 {
+    font-size: 1.2em;
+  }
+  .container-summary-score {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+  }
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+  .summary-button {
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50px;
   }
 }
